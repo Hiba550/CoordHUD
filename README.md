@@ -2,7 +2,8 @@
 
 An advanced Minecraft coordinate display mod that provides a customizable HUD showing coordinates, biome information, and much more! Works with **Fabric**, **Forge**, and **NeoForge**.
 
-![CoordHUD Preview](https://img.shields.io/badge/Minecraft-1.21.1-green) ![Java](https://img.shields.io/badge/Java-21-orange) ![Fabric](https://img.shields.io/badge/Fabric-✓-blue) ![Forge](https://img.shields.io/badge/Forge-✓-red) ![NeoForge](https://img.shields.io/badge/NeoForge-✓-purple)
+![CoordHUD Preview](https://img.shields.io/badge/Minecraft-1.21.5-green) ![Java](https://img.shields.io/badge/Java-21-orange) ![Fabric](https://img.shields.io/badge/Fabric-✓-blue) ![Forge](https://img.shields.io/badge/Forge-✓-red) ![NeoForge](https://img.shields.io/badge/NeoForge-✓-purple) ![Quilt](https://img.shields.io/badge/Quilt-✓-grey)
+
 
 ## ✨ Features
 
