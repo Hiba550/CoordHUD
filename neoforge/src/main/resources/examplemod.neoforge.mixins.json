@@ -1,11 +1,13 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.example.examplemod.mixin",
+  "package": "com.coorddisplay.coordhud.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "client": [
-    "MixinTitleScreen"
+    "MixinMinecraft",
+    "MixinGui",
+    "MixinMinecraftKeyInput"
   ],
   "server": [],
   "injectors": {
