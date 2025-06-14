@@ -1,32 +1,116 @@
-# MultiLoader Template
+# CoordHUD 🧭
 
-This project provides a Gradle project template that can compile Minecraft mods for multiple modloaders using a common project for the sources. This project does not require any third party libraries or dependencies. If you have any questions or want to discuss the project, please join our [Discord](https://discord.myceliummod.network).
+An advanced Minecraft coordinate display mod that provides a customizable HUD showing coordinates, biome information, and much more! Works with **Fabric**, **Forge**, and **NeoForge**.
 
-## Getting Started
+![CoordHUD Preview](https://img.shields.io/badge/Minecraft-1.21.1-green) ![Java](https://img.shields.io/badge/Java-21-orange) ![Fabric](https://img.shields.io/badge/Fabric-✓-blue) ![Forge](https://img.shields.io/badge/Forge-✓-red) ![NeoForge](https://img.shields.io/badge/NeoForge-✓-purple)
 
-### IntelliJ IDEA
-This guide will show how to import the MultiLoader Template into IntelliJ IDEA. The setup process is roughly equivalent to setting up the modloaders independently and should be very familiar to anyone who has worked with their MDKs.
+## ✨ Features
 
-1. Clone or download this repository to your computer.
-2. Configure the project by setting the properties in the `gradle.properties` file. You will also need to change the `rootProject.name`  property in `settings.gradle`, this should match the folder name of your project, or else IDEA may complain.
-3. Open the template's root folder as a new project in IDEA. This is the folder that contains this README.md file and the gradlew executable.
-4. If your default JVM/JDK is not Java 21 you will encounter an error when opening the project. This error is fixed by going to `File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM` and changing the value to a valid Java 21 JVM. You will also need to set the Project SDK to Java 21. This can be done by going to `File > Project Structure > Project SDK`. Once both have been set open the Gradle tab in IDEA and click the refresh button to reload the project.
-5. Open your Run/Debug Configurations. Under the `Application` category there should now be options to run Fabric and NeoForge projects. Select one of the client options and try to run it.
-6. Assuming you were able to run the game in step 5 your workspace should now be set up.
+### 📍 **Core Display**
+- **Coordinates**: Real-time XYZ position display
+- **Biome Information**: Current biome name
+- **Direction & Compass**: Cardinal directions with degrees
+- **Dimension**: Current dimension (Overworld, Nether, End)
+- **Time**: In-game time with customizable 12/24 hour format
 
-### Eclipse
-While it is possible to use this template in Eclipse it is not recommended. During the development of this template multiple critical bugs and quirks related to Eclipse were found at nearly every level of the required build tools. While we continue to work with these tools to report and resolve issues support for projects like these are not there yet. For now Eclipse is considered unsupported by this project. The development cycle for build tools is notoriously slow so there are no ETAs available.
+### 🎯 **Advanced Features**
+- **Compass Widget**: Beautiful circular compass with cardinal directions
+- **Nether/Overworld Conversion**: Automatic coordinate conversion
+- **Weather Display**: Current weather conditions
+- **Light Levels**: Block and sky light levels
+- **Slime Chunk Detection**: Know if you're in a slime chunk
+- **Speed Tracker**: Movement speed in blocks per second
+- **FPS Counter**: Real-time frames per second
+- **Chunk Information**: Current chunk coordinates
 
-## Development Guide
-When using this template the majority of your mod should be developed in the `common` project. The `common` project is compiled against the vanilla game and is used to hold code that is shared between the different loader-specific versions of your mod. The `common` project has no knowledge or access to ModLoader specific code, apis, or concepts. Code that requires something from a specific loader must be done through the project that is specific to that loader, such as the `fabric` or `neoforge` projects.
+### 👤 **Player Information**
+- **Health Display**: Current and maximum health
+- **Food Level**: Hunger bar status
+- **Armor Value**: Total armor points
+- **Block Detection**: Block under player and targeted block
+- **Motion Vector**: Movement direction and speed
+- **Rotation**: Pitch and yaw angles
 
-Loader specific projects such as the `fabric` and `neoforge` project are used to load the `common` project into the game. These projects also define code that is specific to that loader. Loader specific projects can access all the code in the `common` project. It is important to remember that the `common` project can not access code from loader specific projects.
+### 🎨 **Customization**
+- **4 Themes**: Default, Dark, Rainbow, Minimal
+- **Custom Colors**: Fully customizable color scheme
+- **Animations**: Smooth transitions and effects
+- **Configurable Position**: Move HUD anywhere on screen
+- **Text Scaling**: Adjust text size
+- **Background Options**: Toggle background and borders
 
-## Removing Platforms and Loaders
-While this template has support for many modloaders, new loaders may appear in the future, and existing loaders may become less relevant.
+### ⌨️ **Keybinds**
+- **F3**: Toggle HUD on/off
+- **C**: Toggle compass display
+- **Home**: Open configuration menu
 
-Removing loader specific projects is as easy as deleting the folder, and removing the `include("projectname")` line from the `settings.gradle` file.
-For example if you wanted to remove support for `forge` you would follow the following steps:
+### ⚙️ **Configuration**
+- **JSON Configuration**: Persistent settings
+- **In-Game GUI**: Easy configuration through GUI
+- **Hot Reload**: Changes apply instantly
 
-1. Delete the subproject folder. For example, delete `MultiLoader-Template/forge`.
-2. Remove the project from `settings.gradle`. For example, remove `include("forge")`. 
+## 🎮 **Screenshots**
+
+The mod displays coordinates similar to the image you provided, with additional awesome features like:
+- Clean, customizable HUD overlay
+- Beautiful compass with directional indicators
+- Comprehensive information display
+- Multiple theme options
+
+## 📦 **Download & Installation**
+
+1. **Download** the mod from [Releases](https://github.com/Hiba550/CoordHUD/releases)
+2. **Install** your preferred mod loader:
+   - [Fabric](https://fabricmc.net/use/) (recommended)
+   - [Forge](https://files.minecraftforge.net/)
+   - [NeoForge](https://neoforged.net/)
+3. **Place** the mod file in your `mods` folder
+4. **Launch** Minecraft!
+
+## 🛠️ **For Developers**
+
+This mod is built using the MultiLoader Template, supporting all major mod loaders:
+
+### Building
+```bash
+./gradlew build
+```
+
+### Development Setup
+1. Clone the repository
+2. Import into your IDE
+3. Run `./gradlew genEclipseRuns` or `./gradlew genIntellijRuns`
+4. Use the generated run configurations
+
+## 📋 **Requirements**
+
+- **Minecraft**: 1.21.1
+- **Java**: 21+
+- **Fabric**: Fabric Loader 0.15.11+ & Fabric API
+- **Forge**: MinecraftForge 52.0.17+
+- **NeoForge**: NeoForge 21.1.42+
+
+## 🤝 **Contributing**
+
+Contributions are welcome! Please feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+- Improve documentation
+
+## 📄 **License**
+
+This project is licensed under CC0-1.0 - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 **Credits**
+
+- Built with [MultiLoader Template](https://github.com/jaredlll08/MultiLoader-Template)
+- Created with ❤️ for the Minecraft community
+
+## 🐛 **Issues**
+
+Found a bug? Please report it on our [Issues](https://github.com/Hiba550/CoordHUD/issues) page.
+
+---
+
+**Enjoy your enhanced Minecraft experience with CoordHUD!** 🎉 
