@@ -77,15 +77,9 @@ This mod is built using the MultiLoader Template, supporting all major mod loade
 ./gradlew build
 ```
 
-### Development Setup
-1. Clone the repository
-2. Import into your IDE
-3. Run `./gradlew genEclipseRuns` or `./gradlew genIntellijRuns`
-4. Use the generated run configurations
-
 ## **Requirements**
 
-- **Minecraft**: 1.21.1
+- **Minecraft**: 1.21.5
 - **Java**: 21+
 - **Fabric**: Fabric Loader 0.15.11+ & Fabric API
 - **Forge**: MinecraftForge 52.0.17+
