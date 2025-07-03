@@ -1,4 +1,4 @@
-# CoordHUD 🧭
+# CoordHUD
 
 An advanced Minecraft coordinate display mod that provides a customizable HUD showing coordinates, biome information, and much more! Works with **Fabric**, **Forge**, and **NeoForge**.
 
