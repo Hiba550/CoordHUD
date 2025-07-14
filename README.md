@@ -79,7 +79,7 @@ This mod is built using the MultiLoader Template, supporting all major mod loade
 
 ## **Requirements**
 
-- **Minecraft**: 1.21.5
+- **Minecraft**: 1.21.7
 - **Java**: 21+
 - **Fabric**: Fabric Loader 0.15.11+ & Fabric API
 - **Forge**: MinecraftForge 52.0.17+
