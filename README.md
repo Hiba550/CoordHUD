@@ -30,7 +30,6 @@ An advanced Minecraft coordinate display mod that provides a customizable HUD sh
 - **Armor Value**: Total armor points
 - **Block Detection**: Block under player and targeted block
 - **Motion Vector**: Movement direction and speed
-- **Rotation**: Pitch and yaw angles
 
 ### **Customization**
 - **4 Themes**: Default, Dark, Rainbow, Minimal
