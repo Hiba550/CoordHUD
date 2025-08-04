@@ -22,7 +22,6 @@ An advanced Minecraft coordinate display mod that provides a customizable HUD sh
 - **Slime Chunk Detection**: Know if you're in a slime chunk
 - **Speed Tracker**: Movement speed in blocks per second
 - **FPS Counter**: Real-time frames per second
-- **Chunk Information**: Current chunk coordinates
 
 ### **Player Information**
 - **Health Display**: Current and maximum health
