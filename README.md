@@ -8,7 +8,7 @@
 
 1. **Download** the mod from [Releases](https://github.com/Hiba550/CoordHUD/releases)
 2. **Install** your preferred mod loader:
-   - [Fabric](https://fabricmc.net/use/) (recommended)
+   - [Fabric](https://fabricmc.net/use/) 
    - [Forge](https://files.minecraftforge.net/)
    - [NeoForge](https://neoforged.net/)
 3. **Place** the mod file in your `mods` folder
