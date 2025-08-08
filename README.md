@@ -12,4 +12,4 @@
    - [Forge](https://files.minecraftforge.net/)
    - [NeoForge](https://neoforged.net/)
 3. **Place** the mod file in your `mods` folder
-4. **Launch** Minecraft!
+4. **Launch** Minecraft 
